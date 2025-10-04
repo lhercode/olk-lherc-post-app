@@ -1,0 +1,63 @@
+baseURL = 'https://lherc.github.io/olk-lherc-post-app/'
+languageCode = 'es'
+title = 'Lherc Links'
+buildFuture = true
+
+[params]
+  description = "Mi página de enlaces personales"
+  author = "Lherc"
+  profileImage = "/images/profile.jpg"
+  
+  [[params.links]]
+  id = "github"
+  title = "GitHub"
+  description = "Mi código y proyectos"
+  url = "https://github.com/lherc"
+  icon = "fab fa-github"
+  image = "/images/github.jpg"
+  
+  [[params.links]]
+  id = "linkedin"
+  title = "LinkedIn"
+  description = "Mi perfil profesional"
+  url = "https://linkedin.com/in/lherc"
+  icon = "fab fa-linkedin"
+  image = "/images/linkedin.jpg"
+  
+  [[params.links]]
+  id = "twitter"
+  title = "Twitter"
+  description = "Mis pensamientos y actualizaciones"
+  url = "https://twitter.com/lherc"
+  icon = "fab fa-twitter"
+  image = "/images/twitter.jpg"
+  
+  [[params.links]]
+  id = "portfolio"
+  title = "Portfolio"
+  description = "Mis proyectos y trabajos"
+  url = "https://lherc.dev"
+  icon = "fas fa-briefcase"
+  image = "/images/portfolio.jpg"
+  
+  [[params.links]]
+  id = "blog"
+  title = "Blog"
+  description = "Artículos y tutoriales"
+  url = "https://blog.lherc.dev"
+  icon = "fas fa-blog"
+  image = "/images/blog.jpg"
+  
+  [[params.links]]
+  id = "email"
+  title = "Email"
+  description = "Contáctame directamente"
+  url = "mailto:hola@lherc.dev"
+  icon = "fas fa-envelope"
+  image = "/images/email.jpg"
+  
+[menu]
+  [[menu.main]]
+    name = "Inicio"
+    url = "/"
+    weight = 1
