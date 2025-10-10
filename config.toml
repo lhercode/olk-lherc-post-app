@@ -1,4 +1,4 @@
-baseURL = 'https://lhercode.github.io/olk-lherc-post-app/'
+baseURL = 'https://lherc.com/'
 languageCode = 'es'
 title = 'Lherc Links'
 buildFuture = true
