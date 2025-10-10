@@ -1,4 +1,4 @@
-baseURL = 'https://lherc.github.io/olk-lherc-post-app/'
+baseURL = 'https://lhercode.github.io/olk-lherc-post-app/'
 languageCode = 'es'
 title = 'Lherc Links'
 buildFuture = true
@@ -55,6 +55,35 @@ buildFuture = true
   url = "mailto:hola@lherc.dev"
   icon = "fas fa-envelope"
   image = "/images/email.jpg"
+  
+  # Certifications
+  [[params.certifications]]
+  name = "AWS Solutions Architect Professional"
+  issuer = "Amazon Web Services"
+  date = "Octubre 2025"
+  badge = "images/badges/aws-solutions-architect.svg"
+  credential_url = "https://aws.amazon.com/certification/"
+  
+  [[params.certifications]]
+  name = "Docker Certified Associate"
+  issuer = "Docker Inc."
+  date = "Octubre 2025"
+  badge = "images/badges/docker-certified.svg"
+  credential_url = "https://www.docker.com/certification/"
+  
+  [[params.certifications]]
+  name = "Certified Kubernetes Administrator"
+  issuer = "Cloud Native Computing Foundation"
+  date = "Noviembre 2025"
+  badge = "images/badges/kubernetes-cka.svg"
+  credential_url = "https://www.cncf.io/certification/cka/"
+  
+  [[params.certifications]]
+  name = "Google Cloud Professional Architect"
+  issuer = "Google Cloud"
+  date = "Septiembre 2025"
+  badge = "images/badges/gcp-architect.svg"
+  credential_url = "https://cloud.google.com/certification/"
   
 [menu]
   [[menu.main]]

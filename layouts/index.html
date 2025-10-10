@@ -48,6 +48,32 @@
             </div>
         </main>
         
+        <!-- Certifications Section -->
+        <section class="certifications-section">
+            <div class="certifications-container">
+                <h2 class="section-title">🏆 Certificaciones</h2>
+                <div class="certifications-grid">
+                    {{ range .Site.Params.certifications }}
+                    <div class="certification-card">
+                        <div class="certification-badge">
+                            <img src="{{ (.badge) | absURL }}" alt="{{ .name }}" class="badge-image">
+                        </div>
+                        <div class="certification-info">
+                            <h3 class="certification-name">{{ .name }}</h3>
+                            <p class="certification-issuer">{{ .issuer }}</p>
+                            <p class="certification-date">{{ .date }}</p>
+                            {{ if .credential_url }}
+                            <a href="{{ .credential_url }}" target="_blank" class="certification-link">
+                                <i class="fas fa-external-link-alt"></i> Ver credencial
+                            </a>
+                            {{ end }}
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </section>
+        
         <!-- Timeline Section -->
         <section class="timeline-section">
             <div class="timeline-container">

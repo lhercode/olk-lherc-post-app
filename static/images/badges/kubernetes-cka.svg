@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="k8sGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#326ce5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a4d9d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#k8sGrad)"/>
+  <polygon points="100,40 120,90 80,90" fill="white"/>
+  <circle cx="100" cy="100" r="20" fill="white"/>
+  <polygon points="100,160 120,110 80,110" fill="white"/>
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#326ce5" text-anchor="middle">CKA</text>
+  <text x="100" y="180" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Kubernetes Administrator</text>
+</svg>
+
