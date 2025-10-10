@@ -4,12 +4,14 @@ Esta guía te explica cómo agregar tus certificaciones con sus insignias a tu p
 
 ## Vista Previa
 
-La sección de certificaciones se muestra entre tus redes sociales y el timeline, con un diseño de tarjetas que incluye:
-- Insignia circular de la certificación
+La sección de certificaciones se muestra entre tus redes sociales y el timeline. Es una sección **colapsable** (como el timeline) con un diseño horizontal de tarjetas que incluye:
+- Botón toggle para mostrar/ocultar las certificaciones
+- Insignia circular de la certificación (80px)
 - Nombre de la certificación
 - Organización emisora
 - Fecha de obtención
 - Enlace a la credencial verificable
+- Diseño responsive que se adapta a móviles
 
 ## Pasos para Agregar una Nueva Certificación
 
@@ -133,10 +135,28 @@ git push origin main
 2. (Opcional) Elimina la imagen de `static/images/badges/`
 3. Regenera con `hugo` y publica los cambios
 
+## Funcionalidad de Toggle (Mostrar/Ocultar)
+
+La sección de certificaciones viene **oculta por defecto** (como el timeline). Los visitantes pueden hacer clic en el botón de flecha para expandir y ver tus certificaciones.
+
+Si prefieres que esté **visible por defecto**:
+
+1. Abre `layouts/index.html`
+2. Busca la línea:
+   ```html
+   <div class="certifications-content" id="certifications-content" style="display: none;">
+   ```
+3. Cámbiala a:
+   ```html
+   <div class="certifications-content" id="certifications-content" style="display: block;">
+   ```
+4. Regenera el sitio con `hugo` y publica los cambios
+
 ## Personalizar el Diseño
 
 Si deseas cambiar el aspecto de las certificaciones, edita los estilos en:
 - `static/css/style.css` (busca la sección `/* Certifications Section */`)
+- `static/js/script.js` (busca la función `toggleCertifications()` para modificar la animación)
 
 ## Troubleshooting
 
