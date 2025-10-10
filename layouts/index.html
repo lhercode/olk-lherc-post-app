@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Site.Title }}</title>
     <meta name="description" content="{{ .Site.Params.description }}">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +14,7 @@
         <header class="header">
             <div class="header-content">
                 <div class="profile-image">
-                    <img src="{{ .Site.Params.profileImage | default "/images/profile.jpg" }}" alt="{{ .Site.Params.author }}" class="profile-img">
+                    <img src="{{ (.Site.Params.profileImage | default "images/profile.jpg") | absURL }}" alt="{{ .Site.Params.author }}" class="profile-img">
                 </div>
                 <div class="profile-section">
                     <h1 class="name">{{ .Site.Params.author }}</h1>
@@ -278,6 +278,6 @@
         </footer>
     </div>
     
-    <script src="/js/script.js"></script>
+    <script src="{{ "js/script.js" | absURL }}"></script>
 </body>
 </html>
