@@ -102,6 +102,21 @@ function toggleTimeline() {
     }
 }
 
+// Función para toggle de certificaciones
+function toggleCertifications() {
+    const certificationsContent = document.getElementById('certifications-content');
+    const certificationsIcon = document.getElementById('certifications-icon');
+    
+    if (certificationsContent.style.display === 'none') {
+        certificationsContent.style.display = 'block';
+        certificationsIcon.className = 'fas fa-chevron-up';
+        certificationsContent.style.animation = 'slideDown 0.3s ease';
+    } else {
+        certificationsContent.style.display = 'none';
+        certificationsIcon.className = 'fas fa-chevron-down';
+    }
+}
+
 // Función para toggle de tareas completadas
 function toggleCompleted(button) {
     const completedItems = button.nextElementSibling;

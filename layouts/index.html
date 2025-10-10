@@ -51,8 +51,14 @@
         <!-- Certifications Section -->
         <section class="certifications-section">
             <div class="certifications-container">
-                <h2 class="section-title">🏆 Certificaciones</h2>
-                <div class="certifications-grid">
+                <div class="certifications-header">
+                    <h2 class="section-title">🏆 Certificaciones</h2>
+                    <button class="certifications-toggle" onclick="toggleCertifications()">
+                        <i class="fas fa-chevron-down" id="certifications-icon"></i>
+                    </button>
+                </div>
+                <div class="certifications-content" id="certifications-content" style="display: none;">
+                    <div class="certifications-grid">
                     {{ range .Site.Params.certifications }}
                     <div class="certification-card">
                         <div class="certification-badge">
@@ -70,6 +76,7 @@
                         </div>
                     </div>
                     {{ end }}
+                    </div>
                 </div>
             </div>
         </section>
